@@ -8,9 +8,6 @@ public:
             else if(nums[i]<0)
                 neg++;
         }
-        if(pos>=neg)
-            return pos ;
-        else
-            return neg;
+       return max(pos,neg);
     }
 };
