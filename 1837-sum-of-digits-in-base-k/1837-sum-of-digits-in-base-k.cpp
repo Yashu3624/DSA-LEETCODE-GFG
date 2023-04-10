@@ -6,11 +6,10 @@ public:
             int rem = n%k ;
             n = n / k ;
             res = rem +res*10;
+            sum += rem;
         }
-        while(res!=0){
-            sum += res%10;
-            res = res/10;
-        }
+       
+        
         return sum;
     }
 };
