@@ -8,6 +8,6 @@ public:
         for(auto &c : s)
         sum -= c;
      
-    return sum ; 
+    return (char)sum ; 
     }
 };
