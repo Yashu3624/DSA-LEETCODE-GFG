@@ -1,13 +1,15 @@
 class Solution {
 public:
     double average(vector<int>& salary) {
-        double sum = 0 ;
         sort(salary.begin() , salary.end());
-        for(int i = 1 ; i < salary.size()-1;i++){
+        double sum = 0;
+        int n = salary.size()-2;
+        for(int i = 1 ;  i <= n ; i++){
             sum += salary[i];
         }
-        int n = salary.size()-2;
-        return sum/n;
+        double res = sum/n;
+        return res;
+
         
     }
 };
