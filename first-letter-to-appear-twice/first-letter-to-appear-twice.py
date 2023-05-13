@@ -1,9 +1,8 @@
 class Solution:
     def repeatedCharacter(self, s: str) -> str:
-        res = []
-        for i in range(len(s)):
-            if s[i] in res:
-                return s[i]
-            else:
-                res.append(s[i])
+        map=defaultdict(int)
+        for i in s:
+            map[i]+= 1
+            if map[i]>=2:
+                return i
         
