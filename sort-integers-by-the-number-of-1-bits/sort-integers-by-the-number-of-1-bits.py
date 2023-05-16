@@ -1,15 +1,14 @@
 class Solution:
     def sortByBits(self, arr: List[int]) -> List[int]:
         arr = sorted(arr)
-        l = []
+        ans = []
         for i in arr:
             b = bin(i)
             b = b[2:]
-            l.append([b.count("1"),i])
-        l.sort()
+            ans.append([b.count("1"),i])
+        ans = sorted(ans)
         res = []
-        for i in l:
+        for i in ans:
             res.append(i[1])
         return res
-        
         
