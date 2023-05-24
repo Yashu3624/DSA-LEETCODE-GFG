@@ -5,6 +5,6 @@ class Solution:
             if arr.count(i)==1:
                 res.append(i)
         if k<=len(res):
-            return str(res[k-1])
+            return res[k-1]
         else:
             return ""
