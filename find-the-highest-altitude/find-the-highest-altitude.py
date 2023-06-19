@@ -4,7 +4,7 @@ class Solution:
         sum = 0
         res.append(sum)
         for i in gain:
-            sum += i
+            sum += i 
             res.append(sum)
-        
         return max(res)
+        
