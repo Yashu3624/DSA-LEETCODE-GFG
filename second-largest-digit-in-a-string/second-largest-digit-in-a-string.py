@@ -7,7 +7,7 @@ class Solution:
         
         num = set(num)
         num = sorted(list(num))
-        num = num[::-1]
+
         if len(num)<2:
             return -1
-        return num[1]
+        return num[-2]
