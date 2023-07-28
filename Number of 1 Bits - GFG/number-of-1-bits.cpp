@@ -5,20 +5,14 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    int setBits(int num) {
+    int setBits(int N) {
         // Write Your Code here
-        int digit = 0 ;
-        int count = 0 ;
-        while(num!=0){
-            digit = num%2;
-            if(digit==1){
-                count++;
-
-            }
-            num = num/2;
+        int cnt = 0 ;
+        while(N){
+            N = N&(N-1);
+            cnt++;
         }
-        return count;
-        
+        return cnt;
     }
 };
 
