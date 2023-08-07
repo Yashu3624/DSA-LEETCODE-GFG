@@ -4,7 +4,7 @@ public:
         vector<int>ans ; 
         int i = 0 ; 
         int j = n;
-        while(j<2*n){
+        while(i<n){
             ans.push_back(nums[i++]);
             ans.push_back(nums[j++]);
         }
