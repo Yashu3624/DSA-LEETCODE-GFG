@@ -9,18 +9,18 @@ public:
     vector<int> singleNumber(vector<int> nums) 
     {
         // Code here.
-        vector<int>ans;
-        unordered_map<int,int>res;
+        vector<int>res;
+        map<int,int>mp ; 
         for(int i = 0 ; i < nums.size() ; i++){
-            res[nums[i]]++;
+            mp[nums[i]]++;
         }
-        for(auto i:res){
-            if(i.second==1)
-            ans.push_back(i.first);
-            
+        for(int i = 0 ; i < nums.size() ; i++){
+            if(mp[nums[i]]==1){
+                res.push_back(nums[i]);
+            }
         }
-        sort(ans.begin(),ans.end());
-        return ans;
+        sort(res.begin() , res.end());
+        return res;
     }
 };
 
