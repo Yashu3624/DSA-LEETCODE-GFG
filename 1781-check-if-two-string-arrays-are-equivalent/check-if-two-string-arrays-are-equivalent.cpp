@@ -9,6 +9,6 @@ public:
         for(int i = 0 ; i < word2.size() ; i++){
             res2 += word2[i];
         }
-        return res1==res2;
+        return res1==res2 ? true :false;
     }
 };
