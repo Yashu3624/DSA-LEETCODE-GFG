@@ -6,7 +6,7 @@ public:
             int cnt = 0 ; 
             int num = i ;
             while(num){
-                cnt += num%2;
+                cnt += num&1;
                 num =num>>1;
             }
             res.push_back(cnt);
