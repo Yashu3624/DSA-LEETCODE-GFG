@@ -1,10 +1,20 @@
 class Solution {
 public:
+    bool isPalindrome(string s){
+        int i = 0 , j = s.size() -1 ; 
+        while(i<j){
+            if(s[i]!=s[j]){
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
+    }
     string firstPalindrome(vector<string>& words) {
-        for(auto word : words){
-            string w = word  ;
-            reverse(word.begin(),word.end());
-            if(w==word) return w ;
+        for(string word : words){
+            if(isPalindrome(word))
+                return word;
         }
         return "";
     }
