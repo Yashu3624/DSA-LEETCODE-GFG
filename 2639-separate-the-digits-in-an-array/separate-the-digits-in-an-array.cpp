@@ -1,20 +1,16 @@
 class Solution {
 public:
     vector<int> separateDigits(vector<int>& nums) {
+        int n = nums.size();
         vector<int>digi;
-        for(int num : nums){
-            int n = num ; 
-            vector<int>temp;
-            while(n){
-                temp.push_back(n%10);
-                n /= 10;
-                
+        for(int i = n-1 ; i >= 0 ; i--){
+            int num = nums[i];
+            while(num){
+                digi.push_back(num%10);
+                num /= 10;
             }
-            reverse(temp.begin() , temp.end());
-            for(auto it : temp)
-            digi.push_back(it);
-            
         }
+        reverse(digi.begin(),digi.end());
         return digi;
     }
 };
