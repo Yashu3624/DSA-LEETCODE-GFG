@@ -15,12 +15,7 @@ public:
         int n = image.size();
         for(auto a : image){
             for(int i = 0 ; i < n ; i++){
-                if(a[i]==1){
-                    a[i] = 0 ; 
-                }
-                else{
-                    a[i] = 1 ; 
-                }
+                a[i] = a[i]==1?0:1;
             }
             reverse(a,n);
             res.push_back(a);
