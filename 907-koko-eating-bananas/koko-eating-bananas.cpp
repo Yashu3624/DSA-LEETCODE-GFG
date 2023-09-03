@@ -12,12 +12,7 @@ public:
     long long findTotalHours(vector<int>& piles,int mid){
         long long sum = 0 ;
         for(int i = 0 ; i < piles.size() ; i++){
-            if(piles[i]%mid==0){
-                sum += piles[i]/mid;
-            }
-            else{
-                sum += (piles[i]/mid) + 1 ;
-            }
+            sum =sum + (piles[i]/mid)+(piles[i]%mid !=0);
         }
         return sum;
     }
