@@ -11,8 +11,8 @@ public:
     }
     long long findTotalHours(vector<int>& piles,int mid){
         long long sum = 0 ;
-        for(int i = 0 ; i < piles.size() ; i++){
-            sum =sum + (piles[i]/mid)+(piles[i]%mid !=0);
+        for(auto it : piles){
+            sum =sum + (it/mid)+(it%mid !=0);
         }
         return sum;
     }
