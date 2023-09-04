@@ -1,18 +1,17 @@
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-        set<int>st ; 
-        for(auto i : nums1){
-            for(auto j : nums2){
-                if(i==j){
-                    st.insert(i);
-                }
+        unordered_map<int,int>mp ; 
+        for(auto x : nums1){
+            mp[x] = 1 ;
+        }
+        vector<int>res;
+        for(auto x : nums2){
+            if(mp[x]==1){
+                res.push_back(x);
+                mp[x] = 0 ;
             }
         }
-        vector<int>res ; 
-        for(auto i : st){
-            res.push_back(i);
-        }
-        return res;        
+        return res;
     }
 };
