@@ -17,10 +17,12 @@ public:
             head = head->next ;
         }
         vector<int>res;
-        for(int i = 0 ; i < v.size()/2 ; i++){
-            res.push_back(v[i]+v[v.size()-1-i]);
+        int i = 0 , j = v.size()-1;
+        while(i<j){
+            res.push_back(v[i]+v[j]);
+            i++;
+            j--;
         }
-     return *max_element(res.begin() , res.end());
-        
+        return *max_element(res.begin() ,res.end());
     }
 };
