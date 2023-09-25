@@ -20,8 +20,7 @@ public:
         for(int i = 0 ; i < v.size() ; i++){
             res.push_back(v[i]+v[v.size()-1-i]);
         }
-        sort(res.rbegin(),res.rend());
-     return res[0];
+     return *max_element(res.begin() , res.end());
         
     }
 };
