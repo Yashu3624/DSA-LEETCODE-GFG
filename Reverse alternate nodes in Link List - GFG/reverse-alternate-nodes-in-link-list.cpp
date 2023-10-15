@@ -106,7 +106,7 @@ class Solution
     
         even_head = newNode ;
         odd->next = even_head;
-            head = odd ;
+          
     }
 };
 
