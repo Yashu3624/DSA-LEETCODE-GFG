@@ -7,8 +7,13 @@ public:
                 ans += tolower(s[i]);
             }
         }
-        string res =ans;
-         reverse(ans.begin(),ans.end());
-        return res==ans;
+        int i = 0 ; 
+        int j = ans.size()-1;
+        while(i<j){
+            if(ans[i++]!=ans[j--]){
+                return false;
+            }
+        }
+        return true;
     }
 };
