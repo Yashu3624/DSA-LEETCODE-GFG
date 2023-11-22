@@ -12,16 +12,15 @@ class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
         if(head==NULL || head->next==NULL) return head;
-        vector<int>res ; 
+        vector<int>ans ; 
+        map<int,int>mp ; 
         while(head!=NULL){
-            res.push_back(head->val);
+            mp[head->val]++;
             head = head->next ; 
         }
-        map<int,int>mp ; 
-        for(auto it : res){
-            mp[it]++;
-        }
-        vector<int>ans ; 
+        
+     
+  
         for(auto &it: mp){
             if(it.second==1){
                 ans.push_back(it.first);
