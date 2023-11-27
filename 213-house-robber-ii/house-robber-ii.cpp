@@ -1,30 +1,27 @@
 class Solution {
 public:
-    int f1(int n , vector<int>&a , vector<int>&dp){
-        if(n==1) return a[n];
-        if(n<=0) return 0  ;
-        if(dp[n]!=-1) return dp[n];
-        int pick = a[n] + f1(n-2 , a, dp);
-        int notPick = 0 + f1(n-1,a,dp);
-        return dp[n] = max(pick , notPick);
-    }
-    int f2(int n , vector<int>&a , vector<int>&dp){
-        if(n==a.size()-2) return a[n];
-        if(n>=a.size()-1) return 0 ;
-
-        if(dp[n]!=-1) return dp[n];
-        int pick = a[n] + f2(n+2 , a , dp);
-        int notPick = 0 + f2(n+1 ,a , dp);
-        return dp[n] = max(pick,notPick);
+    int f(vector<int>&nums){
+        int prev1 = nums[0];
+        int prev2 = 0 ;
+        for(int i = 1 ; i < nums.size(); i++){
+            int pick = nums[i] ;
+            if(i>1) pick += prev2;
+            int notPick = prev1 ;
+            int curr = max(pick,notPick);
+            prev2 = prev1 ; 
+            prev1 = curr;
+        }
+        return prev1;
     }
     int rob(vector<int>& nums) {
-        int n = nums.size() ; 
+        vector<int>temp1,temp2 ; 
+        int n = nums.size(); 
         if(n==1) return nums[0];
-        vector<int>dp1(n+1,-1);
-        vector<int>dp2(n+1,-1);
-        int ans1 = f1(n-1, nums,dp1);
-        int ans2 = f2(0 , nums , dp2);
-        return max(ans1,ans2);
+        for(int i =0 ; i < n ; i++){
+            if(i!=0) temp1.push_back(nums[i]);
+            if(i!=n-1) temp2.push_back(nums[i]);
+        }
+        return max(f(temp1),f(temp2));
 
     }
 };
