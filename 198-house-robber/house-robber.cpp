@@ -1,16 +1,18 @@
 class Solution {
 public:
-    int f(int n , vector<int>&a , vector<int>&dp){
-        if(n==0) return a[n];
-        if(n<0) return 0 ;
-        if(dp[n]!=-1) return dp[n];
-        int pick  = a[n]+f(n-2,a,dp);
-        int notPick = 0 + f(n-1,a,dp);
-        return dp[n]=max(notPick , pick);
-    }
     int rob(vector<int>& nums) {
         int n = nums.size() ; 
-        vector<int>dp(n+1 , -1);
-        return f(n-1, nums ,dp);
+        vector<int>dp(n+1,0);
+        dp[0] = nums[0];
+        int neg = 0 ; 
+        for(int i = 1 ; i < n ; i++){
+            int pick = nums[i] ;
+            if(i>1){
+                pick = pick + dp[i-2];
+            }
+            int notPick = 0 + dp[i-1];
+            dp[i] = max(notPick , pick );
+        }
+        return dp[n-1];
     }
 };
