@@ -1,14 +1,15 @@
 class Solution {
 public:
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
-        string res1 = "";
-        string res2 = "";
-        for(auto i : word1){
-            res1 += i;
-        }
-        for(auto i : word2){
-            res2 += i;
-        }
-        return res1==res2 ? true :false;
+        string st1 , st2 ;
+        for(int i = 0 ; i < word1.size() ; i++)
+            st1 += word1[i];
+        for(int i = 0 ; i < word2.size() ; i++)
+            st2 += word2[i];
+
+        if(st1==st2)
+            return true;
+        else
+        return false;
     }
 };
