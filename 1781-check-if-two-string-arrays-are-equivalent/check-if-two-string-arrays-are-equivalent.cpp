@@ -7,9 +7,6 @@ public:
         for(int i = 0 ; i < word2.size() ; i++)
             st2 += word2[i];
 
-        if(st1==st2)
-            return true;
-        else
-        return false;
+    return st1 == st2;
     }
 };
