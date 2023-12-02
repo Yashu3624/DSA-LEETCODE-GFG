@@ -21,11 +21,17 @@ public:
     bool findTarget(TreeNode* root, int k) {
         vector<int>res ; 
         traverse(root,res);
-        for(int i = 0 ; i < res.size() ; i++){
-            for(int j = i+1 ; j < res.size() ;j++){
-                if(res[i]+res[j]==k) return true;
+        sort(res.begin(),res.end());
+        int i = 0 ;
+        int j = res.size()-1;
+        while(i<j){
+            if(res[i]+res[j]==k) return true ;
+            else if(res[i]+res[j]>k){
+                j--;
             }
-
+            else{
+                i++;
+            }
         }
         return false;
     }
