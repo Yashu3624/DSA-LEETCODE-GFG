@@ -11,50 +11,45 @@
  */
 class Solution {
 public:
+    TreeNode* helper(TreeNode* root){
+            if(root==NULL) return NULL ; 
+            if(root->left==NULL) return root->right ; 
+            if(root->right==NULL) return root->left;
+            TreeNode* rightChild = root->right;
+            TreeNode* lastRight = findRight(root->left);
+            lastRight->right = rightChild;
+            return root->left;
+        }
+           TreeNode* findRight(TreeNode* root){
+            if(root->right==NULL) return root;
+            return findRight(root->right);
+        }
     TreeNode* deleteNode(TreeNode* root, int key) {
-        if(root==NULL) return NULL;
-
+        if(root==NULL) return NULL ;
         if(root->val==key) return helper(root);
-
-        TreeNode* dummy = root ;
+        TreeNode* dummy  = root ; 
         while(root!=NULL){
-            if(root->val > key){
-                if(root -> left != NULL && root->left->val == key){
+            if(root->val>key){
+                if(root->left!=NULL && root->left->val==key){
                     root->left = helper(root->left);
-                    break ;
+                    break;
                 }
                 else{
                     root = root->left;
                 }
             }
             else{
-                if(root->right != NULL && root->right->val == key ){
+                if(root->right!=NULL && root->right->val==key){
                     root->right = helper(root->right);
-                    break ;
+                    break;
                 }
                 else{
                     root = root->right;
                 }
             }
+            
         }
-        return dummy ;
-    }
-    TreeNode* helper(TreeNode* root){
-        if(root->left==NULL)
-        {
-            return root->right;
-        }
-        if(root->right == NULL){
-            return root->left;
-        }
-        TreeNode* rightChild = root->right;
-        TreeNode* lastChild = findLastChild(root->left);
-        lastChild->right = rightChild;
-        return root->left;
-    }
-    TreeNode* findLastChild(TreeNode* root){
-        if(root->right==NULL)
-        return root ;
-        return findLastChild(root->right);
+        
+     return dummy;
     }
 };
