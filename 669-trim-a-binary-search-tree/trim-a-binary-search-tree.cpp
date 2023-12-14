@@ -11,12 +11,12 @@
  */
 class Solution {
 public:
-    TreeNode* trimBST(TreeNode* root, int a, int b) {
-     if(root==NULL) return NULL ; 
-     if(root->val<a) return trimBST(root->right ,a , b );
-     if(root->val>b) return trimBST(root->left,a,b);
-     root->left = trimBST(root->left,a,b);
-     root->right = trimBST(root->right,a,b);
-     return root ;   
+    TreeNode* trimBST(TreeNode* root, int low, int high) {
+        if(root==NULL) return NULL ; 
+        if(root->val<low) return trimBST(root->right,low,high);
+        if(root->val>high) return trimBST(root->left,low,high);
+        root->left = trimBST(root->left,low,high);
+        root->right = trimBST(root->right,low,high);
+        return root;
     }
 };
