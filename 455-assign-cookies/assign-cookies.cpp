@@ -14,8 +14,11 @@ public:
                 i++;
                 j++;
             }
-            else{
+            else if(s[j]<g[i]) {
                 j++;
+            }
+            else{
+                i++;
             }
         }
         return cnt ;
