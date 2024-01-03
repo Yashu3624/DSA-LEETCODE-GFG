@@ -15,7 +15,7 @@ public:
             temp.push_back(laser);
         }
        int prev =0 ;
-       int curr = 0 ;
+      
        for(int i = 0 ; i < n ; i++){
            if(temp[i]!=0){
                cnt += prev*temp[i];
