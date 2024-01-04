@@ -1,18 +1,22 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums) {
+        int cnt = 0 ;
         unordered_map<int,int>mp ; 
-        for(auto it : nums){
-            mp[it]++;
+        for(int i : nums){
+            mp[i]++;
         }
-        int ans = 0 ; 
         for(auto it : mp){
-            if(it.second == 1) return - 1 ; 
-            int val = it.second/3 ; 
-            int rem = it.second%3 ; 
-            if(rem>0) val++;
-            ans += val ;
+            if(it.second==1) return -1 ;
+            else{
+                int x = it.second ;
+                if(x%3==0) 
+                cnt += x/3;
+                else
+                cnt += x/3 + 1 ;
+                
+            }
         }
-        return ans ; 
+        return cnt ;
     }
 };
