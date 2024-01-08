@@ -11,17 +11,17 @@
  */
 class Solution {
 public:
-    void preorder(TreeNode* root , int low , int high , int &sum){
-        if(root==NULL) return ; 
-        if(root->val<=high && root->val >=low)
-        sum = sum + root->val ; 
-        preorder(root->left,low , high , sum);
-        preorder(root->right , low , high , sum);
+    void f(TreeNode* root , int low , int high, int& sum){
+        if(root==NULL) return  ;
+        if(root->val>=low && root->val<=high) sum = sum + root->val;
+        f(root->left,low,high,sum);
+        f(root->right,low,high,sum);
+        
     }
     int rangeSumBST(TreeNode* root, int low, int high) {
         int sum = 0 ;
-        preorder(root,low , high , sum);
-        return sum ; 
-
+         f(root,low,high,sum);
+         return sum ;
+        
     }
 };
