@@ -1,20 +1,19 @@
 class Solution {
 public:
     int minSteps(string s, string t) {
-        vector<int>mp1(26,0),mp2(26,0);
-        int sol = 0;
+        int ans = 0;
+        
+        unordered_map<char,int>mp;
         for(auto ch : s){
-            mp1[ch-'a']++;
+            mp[ch]++;
         }
         for(auto ch : t){
-            mp2[ch-'a']++;
+            mp[ch]--;
         }
-        for(int i = 0 ; i < 26 ; i++){
-            if(mp1[i]>mp2[i]) 
-            sol += mp1[i]-mp2[i];
-
+        for(auto ch: mp){
+            ans += abs(ch.second);
         }
-        return sol;
+        return ans/2;
 
     }
 };
