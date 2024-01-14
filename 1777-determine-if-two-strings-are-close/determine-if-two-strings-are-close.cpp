@@ -1,19 +1,24 @@
 class Solution {
 public:
     bool closeStrings(string word1, string word2) {
-        if(word1.size()!=word2.size()) return false ;
-        set<char>s1,s2;
-        vector<int>w1(26,0);
-        vector<int>w2(26,0);
-        for(int i = 0 ; i < word1.size() ; i++){
-            s1.insert(word1[i]);
-            s2.insert(word2[i]);
-            w1[word1[i]-'a']++;
-            w2[word2[i]-'a']++;
+        vector<int>f1(26,0);
+        vector<int>f2(26,0);
+        for(char ch : word1){
+            f1[ch-'a']++;
         }
-        sort(w1.begin(),w1.end());
-        sort(w2.begin(),w2.end());
-        if(s1==s2 && w1==w2) return true ;
-        return false;
+        for(char ch: word2){
+            f2[ch-'a']++;
+        }
+        for(int i = 0 ; i < 26 ; i++){
+            if((f1[i]!=0 && f2[i]==0 )||(f1[i] == 0 && f2[i]!=0)  )
+            return false ;
+        }
+        sort(f1.begin(),f1.end());
+        sort(f2.begin(),f2.end());
+
+        for(int i = 0 ; i < 26  ; i++){
+            if(f1[i]!=f2[i]) return false;
+        }
+        return true ;
     }
 };
