@@ -6,16 +6,41 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+ int height(ListNode* head){
+     if(head==NULL) return 0 ;
+     int l = 0 ;
+     while(head!=NULL){
+         l++;
+         head = head->next ;
+     }
+     return l ;
+ }
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        if(headA==NULL || headB==NULL ) return NULL ;
-        ListNode* head1 = headA;
-        ListNode* head2 = headB ;
-        while(head1!=head2){
-            head1 = head1==NULL?headB:head1->next ;
-            head2 = head2==NULL?headA:head2->next ;
+        if(headA==NULL || headB==NULL) return NULL ;
+        int n = height(headA) ;
+        int m = height(headB);
+        int diff = abs(n-m);
+        if(n>m){
+            while(diff--){
+                headA = headA->next ;
+            }
         }
-        return head1;
+        if(n<m){
+            while(diff--){
+                headB = headB->next ;
+            }
+
+        }
+        while(headA!=NULL){
+            if(headA==headB) return headA;
+            else{
+                headA = headA->next ;
+                headB = headB->next ;
+            }
+        }
+        return NULL;
+        
     }
 };
