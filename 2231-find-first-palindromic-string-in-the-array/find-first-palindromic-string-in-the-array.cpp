@@ -1,20 +1,13 @@
 class Solution {
 public:
-    bool isPalindrome(string s){
-        int i = 0 , j = s.size() -1 ; 
-        while(i<j){
-            if(s[i]!=s[j]){
-                return false;
-            }
-            i++;
-            j--;
-        }
-        return true;
-    }
     string firstPalindrome(vector<string>& words) {
-        for(string word : words){
-            if(isPalindrome(word))
-                return word;
+        string s;
+        int cnt = 0 ;
+        for(int i = 0 ;  i < words.size() ; i++){
+            s = words[i];
+            reverse(words[i].begin(),words[i].end());
+            if(s==words[i])
+             return s;
         }
         return "";
     }
