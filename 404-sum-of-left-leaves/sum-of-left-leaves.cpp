@@ -10,30 +10,30 @@
  * };
  */
 class Solution {
-    bool isLeftLeaf(TreeNode* node){
-        if(node->left==NULL && node->right==NULL) return true;
-        return false;
-    }
 public:
+    bool isLeft(TreeNode* node){
+        if(node->left==NULL && node->right==NULL) return true ;
+        return false ;
+    }
     int sumOfLeftLeaves(TreeNode* root) {
-        if(root==NULL) return 0 ;
-        queue<TreeNode*>q ;
+        if(root==NULL) return 0 ; 
+        int sum = 0 ; 
+        queue<TreeNode*>q ; 
         q.push(root);
-        int SumOfLeaves = 0 ;
         while(!q.empty()){
-            int size = q.size() ;
-            for(int i = 0 ; i < size ; i++){
-            TreeNode* node = q.front();
-            q.pop();
-            if(node->left){
-            if(isLeftLeaf(node->left)){
-                SumOfLeaves += node->left->val;
+            int n = q.size();
+            for(int i = 0 ; i < n ; i++){
+                TreeNode* node = q.front();
+                q.pop();
+                if(node->left){
+                if(isLeft(node->left)){
+                    sum += node->left->val ; 
+                }
+                q.push(node->left);
+                }
+                if(node->right) q.push(node->right);
             }
-            q.push(node->left);
         }
-        if(node->right) q.push(node->right);
-            }
-        }
-        return SumOfLeaves;
+        return sum ;
     }
 };
