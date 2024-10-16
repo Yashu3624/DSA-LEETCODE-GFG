@@ -11,34 +11,33 @@
 class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
-        stack<int>st ; 
-        ListNode* temp = head ; 
-        ListNode* temp1  = head ;
-        int n = 0 ;
-        while(temp){
-            n++ ;
-            temp = temp->next ;
+        if(head==NULL || k==1) return head ; 
+
+        ListNode* dummy = new ListNode(0) ;
+        dummy->next = head ;  
+        ListNode* curr  = dummy ; 
+        ListNode* prev = dummy ; 
+        ListNode* nex = dummy ; 
+
+        int count = 0 ; 
+        while(curr->next!=NULL){
+            count++ ; 
+            curr = curr->next ; 
+
         }
-        temp = head ;
-        int i = 0 ; 
-        while(i<n){
-            if(n-i>=k){
-                for(int i = 0 ; i < k ; i++){
-                    st.push(temp->val) ; 
-                    temp = temp->next ;
-                }
-                for(int i  = 0 ; i < k ; i++){
-                    temp1->val = st.top() ;
-                    st.pop();
-                    temp1 = temp1->next ;
-                }
-                i += k ; 
+        while(count>=k){
+            curr = prev->next ; 
+            nex = curr->next ; 
+            for(int i = 1 ; i < k ; i++){
+                curr->next = nex->next ; 
+                nex->next = prev->next ; 
+                prev->next = nex; 
+                nex = curr->next ; 
             }
-            else{
-                return head ;
-            }
+            prev = curr ; 
+            count -= k ;
         }
-        return head ; 
-        
+        return dummy->next ; 
+
     }
 };
