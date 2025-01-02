@@ -1,21 +1,20 @@
 class Solution {
 public:
-    vector<int> vowelStrings(vector<string>& word, vector<vector<int>>& q) {
-        vector<int>res ; 
-        for(int i = 0 ; i < q.size() ; i++ ){
-            int start = q[i][0] ; 
-            int end = q[i][1] ; 
-            int cnt = 0 ;
-            for(int j = start ; j <= end ; j++){
-                int n = word[j].size() ; 
-                int first = word[j][0] ; 
-                int last = word[j][n-1] ; 
-                if((first=='a' || first=='e' || first=='i' || first=='o' || first == 'u')&&(last=='a' || last=='e' || last=='i' || last=='o' || last=='u')){                 cnt += 1 ; 
-
-                }
+    vector<int> vowelStrings(vector<string>& words, vector<vector<int>>& queries) {
+        int n = words.size() ; 
+        vector<int>prefix(n+1,0) ; 
+        unordered_set<char>v = {'a' , 'e' , 'i' , 'o' , 'u'} ; 
+        for(int i = 0 ; i < n ; i++){
+            prefix[i+1] = prefix[i] ; 
+            if(v.count(words[i].front()) && v.count(words[i].back())){
+                prefix[i+1]++ ; 
             }
-            res.push_back(cnt) ; 
         }
-        return res ; 
+        vector<int>ans ; 
+        for(auto it : queries){
+            int left = it[0] , right = it[1] ; 
+            ans.push_back(prefix[right+1]-prefix[left]) ; 
+        }
+        return ans ;
     }
 };
