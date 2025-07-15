@@ -14,8 +14,8 @@ class Solution:
                         cnt2 += 1
                 else:
                     return False
-        print(cnt,cnt2)
-        return cnt>=1 and cnt2>=2
+       
+        return cnt>=1 and cnt2>=1
 
 
 
