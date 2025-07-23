@@ -1,38 +1,38 @@
 class Solution {
 public:
-    int removePairs(string &s, string target) {
-        int write_ind = 0, count = 0;
-        for (char c : s) {
-            s[write_ind] = c;
-            write_ind++;
-            if (write_ind >= 2 && s[write_ind - 1] == target[1] && s[write_ind - 2] == target[0]) {
-                count++;
-                write_ind -= 2;
+    string removeSubstr(string &s , string &matchstr){
+        stack<char>st ; 
+        for(char &ch:s){
+            if(ch==matchstr[1] && !st.empty() && st.top()==matchstr[0]){
+                st.pop() ;
+            }
+            else{
+                st.push(ch) ;
             }
         }
-        s.resize(write_ind);
-        return count;
-    }
-
-    int maximumGain(string s, int x, int y) {
-        int res = 0;
-        string top, bot;
-        int top_score, bot_score;
-
-        if (y > x) {
-            top = "ba";
-            top_score = y;
-            bot = "ab";
-            bot_score = x;
-        } else {
-            top = "ab";
-            top_score = x;
-            bot = "ba";
-            bot_score = y;
+        string temp ; 
+        while(!st.empty()){
+            temp +=st.top() ; 
+            st.pop() ;
         }
-
-        res += removePairs(s, top) * top_score;
-        res += removePairs(s, bot) * bot_score;
-        return res;
+        reverse(temp.begin(),temp.end()) ; 
+        return temp ;
+    }
+    int maximumGain(string s, int x, int y) {
+        int n = s.size() ; 
+        int score = 0 ;
+        string maxStr = (x>y)?"ab":"ba" ; 
+        string minStr = (x<y)?"ab":"ba" ; 
+        //first_pass
+        string temp_first = removeSubstr(s,maxStr) ; 
+        int L = temp_first.size() ; 
+        int charRemoved = (n-L) ; 
+        score += (charRemoved/2)*max(x,y) ; 
+        //secondpass 
+        string temp_second = removeSubstr(temp_first,minStr) ; 
+        int rem  = temp_second.size() ; 
+        int rem_char = (L-rem) ; 
+        score += (rem_char/2)*min(x,y) ; 
+        return score ;
     }
 };
