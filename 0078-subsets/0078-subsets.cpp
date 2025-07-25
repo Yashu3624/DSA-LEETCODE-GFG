@@ -1,25 +1,20 @@
 class Solution {
 public:
-    void subSeq(int idx , vector<int>sub ,vector<vector<int>>&ans ,vector<int>& nums,int n   ){
-
+    void solve(vector<int>&nums , vector<int>&res , vector<vector<int>>&ans , int idx , int n ){
         if(idx>=n){
-            ans.push_back(sub);
-            return ;
+            ans.push_back(res) ; 
+            return ; 
         }
-        sub.push_back(nums[idx]);
-        subSeq(idx+1,sub,ans,nums,n); 
-        sub.pop_back();
-        subSeq(idx+1,sub,ans,nums,n);
-
-
-
+        res.push_back(nums[idx]) ; 
+        solve(nums , res , ans , idx+1 , n ) ; 
+        res.pop_back() ; 
+        solve(nums,res,ans,idx+1, n) ; 
     }
     vector<vector<int>> subsets(vector<int>& nums) {
-        vector<int>sub ; 
-        vector<vector<int>>ans ; 
-        int n = nums.size();
-        int idx = 0 ; 
-        subSeq(idx,sub,ans,nums,n);
+        int n = nums.size()  ; 
+        vector<vector<int>>ans ;
+        vector<int>res ; 
+        solve(nums , res , ans , 0 , n ) ;
         return ans ; 
     }
 };
