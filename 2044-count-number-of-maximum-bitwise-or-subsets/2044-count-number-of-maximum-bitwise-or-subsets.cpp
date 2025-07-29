@@ -7,6 +7,9 @@ public:
         }
         return  0 ;
         }
+        if(dp[idx][res]!=-1){
+            return dp[idx][res] ;
+        }
         int pick = findMaxOrSubSets(idx+1,res|nums[idx],nums , sum , dp) ;
         int  notPick = findMaxOrSubSets(idx+1,res,nums,sum,dp) ;
         return dp[idx][res] = pick+notPick ; 
