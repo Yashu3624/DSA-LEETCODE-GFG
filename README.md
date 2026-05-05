@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0796-rotate-string](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0796-rotate-string/) | Easy |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
@@ -45,4 +46,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0061-rotate-list/) | Medium |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0796-rotate-string](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0796-rotate-string/) | Easy |
 <!---LeetCode Topics End-->
