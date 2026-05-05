@@ -34,4 +34,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0061-rotate-list](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0061-rotate-list/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0061-rotate-list](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0061-rotate-list/) | Medium |
 <!---LeetCode Topics End-->
