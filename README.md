@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0048-rotate-image/) | Medium |
+| [0788-rotated-digits](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0788-rotated-digits/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [3783-mirror-distance-of-an-integer](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3783-mirror-distance-of-an-integer/) | Easy |
 ## String
@@ -50,4 +51,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0796-rotate-string](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0796-rotate-string/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0788-rotated-digits](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0788-rotated-digits/) | Medium |
 <!---LeetCode Topics End-->
