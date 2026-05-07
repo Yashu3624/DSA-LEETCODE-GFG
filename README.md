@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1861-rotating-the-box](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
+| [3660-jump-game-ix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3660-jump-game-ix/) | Medium |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -58,4 +59,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0788-rotated-digits](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0788-rotated-digits/) | Medium |
+| [3660-jump-game-ix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3660-jump-game-ix/) | Medium |
 <!---LeetCode Topics End-->
