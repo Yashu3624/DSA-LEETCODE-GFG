@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0048-rotate-image/) | Medium |
+| [1340-jump-game-v](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1340-jump-game-v/) | Hard |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [1861-rotating-the-box](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
@@ -39,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1340-jump-game-v](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1340-jump-game-v/) | Hard |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
@@ -63,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0788-rotated-digits](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0788-rotated-digits/) | Medium |
+| [1340-jump-game-v](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1340-jump-game-v/) | Hard |
 | [3660-jump-game-ix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3660-jump-game-ix/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
