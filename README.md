@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3120-count-the-number-of-special-characters-i/) | Easy |
+| [3121-count-the-number-of-special-characters-ii](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
 ## Math
@@ -35,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0796-rotate-string](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0796-rotate-string/) | Easy |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3120-count-the-number-of-special-characters-i/) | Easy |
+| [3121-count-the-number-of-special-characters-ii](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
