@@ -102,4 +102,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii/) | Medium |
+## Enumeration
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1291-sequential-digits](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1291-sequential-digits/) | Medium |
 <!---LeetCode Topics End-->
