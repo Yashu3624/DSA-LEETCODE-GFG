@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0048-rotate-image/) | Medium |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0419-battleships-in-a-board](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0419-battleships-in-a-board/) | Medium |
 | [1340-jump-game-v](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1340-jump-game-v/) | Hard |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
@@ -59,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0048-rotate-image/) | Medium |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0419-battleships-in-a-board](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0419-battleships-in-a-board/) | Medium |
 | [1861-rotating-the-box](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
@@ -82,12 +84,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0788-rotated-digits](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0788-rotated-digits/) | Medium |
 | [1340-jump-game-v](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1340-jump-game-v/) | Hard |
 | [3660-jump-game-ix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3660-jump-game-ix/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 ## Number Theory
 | Problem Name | Difficulty |
@@ -117,5 +121,22 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0419-battleships-in-a-board](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0419-battleships-in-a-board/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
+## Topological Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
+## Directed Acyclic Graph
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 <!---LeetCode Topics End-->
