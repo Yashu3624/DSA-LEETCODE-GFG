@@ -1,52 +1,37 @@
 class Solution {
 public:
-    void dfs(int r, int c, string dir, vector<vector<int>>& vis, map<pair<int, int>, int>& mp){
-        int n = vis.size();
-        int m = vis[0].size();
-        if(r<0 || c<0 || r>=n || c>=m) return;
-        if(mp.find({r, c})!=mp.end()) return;
-        else vis[r][c] = 1;
-
-        if(dir == "r"){
-            dfs(r, c+1, "r", vis, mp);
-        }
-        if(dir == "l"){
-            dfs(r, c-1, "l", vis, mp);
-        }
-        if(dir == "u"){
-            dfs(r-1, c, "u", vis, mp);
-        }
-        if(dir == "d"){
-            dfs(r+1, c, "d", vis, mp);
-        }
+    void solve(int i, int j, vector<vector<int>>& dp, int m, int n, int di, int dj){
+      if( i < 0 || i >= m || j < 0 || j >= n ||dp[i][j]==1|| dp[i][j]==2){
+            return  ;
+      } 
+      dp[i][j]  = 3 ; 
+      solve(i+di,j+dj,dp,m,n,di,dj) ;
+   
     }
     int countUnguarded(int m, int n, vector<vector<int>>& guards, vector<vector<int>>& walls) {
-        vector<vector<int>> vis(m, vector<int> (n));
-        queue<pair<int, int>> q;
-        map<pair<int, int>, int> mp;
-        for(auto it: guards){
-            q.push({it[0], it[1]});
-            mp[{it[0], it[1]}]++;
-            vis[it[0]][it[1]] = 1;
+        vector<vector<int>>dp(m,vector<int>(n,0)) ; 
+        for(auto& guard : guards){
+            dp[guard[0]][guard[1]] = 1 ; 
         }
-        for(auto it: walls) {
-            mp[{it[0], it[1]}]++;
-            vis[it[0]][it[1]] = 1;
+        for(auto& wall: walls ){
+            dp[wall[0]][wall[1]] = 2 ; 
         }
-        for(auto it: guards){
-            int r = it[0];
-            int c = it[1];
-            dfs(r, c+1, "r", vis, mp);
-            dfs(r, c-1, "l", vis, mp);
-            dfs(r+1, c, "d", vis, mp);
-            dfs(r-1, c, "u", vis, mp);
+        for(int i = 0 ; i < guards.size() ; i++){
+            solve(guards[i][0]-1 , guards[i][1],dp,m,n,-1,0  ) ; 
+            solve(guards[i][0]+1 , guards[i][1],dp,m,n,1,0  )  ;
+            solve(guards[i][0] , guards[i][1]-1,dp,m,n,0,-1  ) ;
+            solve(guards[i][0] , guards[i][1]+1,dp,m,n,0,1  ) ;
         }
-        int cnt=0;
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
-                if(vis[i][j] == 0) cnt++;
+        int cnt = 0 ; 
+        for(int i = 0 ; i  < m ; i++){
+            for(int j = 0 ; j < n ; j++){
+                if(dp[i][j]==0)
+                cnt++ ; 
             }
         }
-        return cnt;
+        return cnt ; 
+        
+
+
     }
 };
