@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1861-rotating-the-box](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2126-destroying-asteroids](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2126-destroying-asteroids/) | Medium |
+| [2257-count-unguarded-cells-in-the-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2257-count-unguarded-cells-in-the-grid/) | Medium |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
@@ -59,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/0048-rotate-image/) | Medium |
 | [1861-rotating-the-box](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
+| [2257-count-unguarded-cells-in-the-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2257-count-unguarded-cells-in-the-grid/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -106,4 +108,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1291-sequential-digits](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/1291-sequential-digits/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2257-count-unguarded-cells-in-the-grid](https://github.com/Yashu3624/DSA-LEETCODE-GFG/tree/main/2257-count-unguarded-cells-in-the-grid/) | Medium |
 <!---LeetCode Topics End-->
